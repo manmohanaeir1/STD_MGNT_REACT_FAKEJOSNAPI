@@ -145,3 +145,5 @@ const [stateVariable, setStateVariable] = useState(initialValue);
 -setState: A function to update the state.
 
 -initialValue: The initial value of the state variable.
+
+```
