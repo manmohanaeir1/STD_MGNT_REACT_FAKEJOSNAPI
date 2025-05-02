@@ -197,3 +197,14 @@ input[type="email"]:focus {
 .btn-reset:hover {
     background-color: #c82333;
 }
+
+
+/* Error Message Styling */
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    font-weight: bold;
+}
