@@ -20,7 +20,7 @@ export default function StudentTable() {
         <div className="container">
             <h2>Students Details</h2>
              <div className="table-contentner">
-                 <Link to ="/student/create"  className="btn btn-add">Add New Srudent</Link>
+                 <Link to ="/student/create" className="btn btn-add">Add New Srudent</Link>
              </div>
              <table>
     <thead>
