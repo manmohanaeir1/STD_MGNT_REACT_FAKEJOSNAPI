@@ -84,7 +84,7 @@ This project uses **JSON Server** as a mock backend to manage student data. The 
 ---
 
 ## File Path
-`/home/manmohan/Documents/Intern/React/student_management/db.json`
+` /student_management/db.json`
 
 ---
 
