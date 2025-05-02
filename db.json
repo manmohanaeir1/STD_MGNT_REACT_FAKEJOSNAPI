@@ -1,27 +1,83 @@
- {
-     "students": [{
-             "id": 1,
-             "firstName": "John",
-             "lastName": "Doe",
-             "address": "123 Main St",
-             "phone": "555-555-5555",
-             "email": "man@gmail.com"
-         },
-         {
-             "id": 2,
-             "firstName": "Jane",
-             "lastName": "Smith",
-             "address": "456 Elm St",
-             "phone": "555-555-1234",
-             "email": "jane@gmail.com"
-         },
-         {
-             "id": 3,
-             "firstName": "Bob",
-             "lastName": "Johnson",
-             "address": "789 Oak St",
-             "phone": "555-555-9876",
-             "email": "dsda@das.da"
-         }
-     ]
- }
+{
+    "students": [{
+            "id": "1",
+            "firstName": "John",
+            "lastName": "Doe",
+            "address": "123 Main St",
+            "phone": "555-555-5555",
+            "email": "man@gmail.com"
+        },
+        {
+            "id": "2",
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "address": "456 Elm St",
+            "phone": "555-555-1234",
+            "email": "jane@gmail.com"
+        },
+        {
+            "id": "3",
+            "firstName": "Bob",
+            "lastName": "Johnson",
+            "address": "789 Oak St",
+            "phone": "555-555-9876",
+            "email": "dsda@das.da"
+        },
+        {
+            "id": " ",
+            "firstName": " ",
+            "lastName": " ",
+            "address": " ",
+            "phone": " ",
+            "email": " "
+        },
+        {
+            "id": " 5",
+            "firstName": "New  ",
+            "lastName": "Entry",
+            "address": "Hello12345",
+            "phone": "7890-",
+            "email": "hello@gmail.com"
+        },
+        {
+            "id": " ",
+            "firstName": " ",
+            "lastName": " ",
+            "address": " ",
+            "phone": " ",
+            "email": " "
+        },
+        {
+            "id": " 8",
+            "firstName": " ram ",
+            "lastName": "hari",
+            "address": "wer",
+            "phone": "567890-",
+            "email": "jnk@gmai.vom"
+        },
+        {
+            "id": "9 ",
+            "firstName": "man",
+            "lastName": "mohan",
+            "address": "wer",
+            "phone": "2345",
+            "email": "dnfksjn@gsd.sf"
+        },
+        {
+            "id": "9 ",
+            "firstName": "man",
+            "lastName": "mohan",
+            "address": "wer",
+            "phone": "2345",
+            "email": "dnfksjn@gsd.sf"
+        },
+        {
+            "id": "10",
+            "firstName": "Manmohan ",
+            "lastName": "Aeeir",
+            "address": "dfghjk",
+            "phone": "456789",
+            "email": "mxnhdbj@fauid.com"
+        }
+    ]
+}
