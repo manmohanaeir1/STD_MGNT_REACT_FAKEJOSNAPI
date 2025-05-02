@@ -47,3 +47,82 @@ The `App` component defines the routing structure for the application. It uses t
 - **Purpose**: Intended for viewing the details of a specific student. However, it currently uses the `EditStudent` component, which may need to be replaced with a dedicated `ViewStudent` component.
 
 ---
+
+
+# 📦 JSON Server Setup Guide
+
+`json-server` is a full fake REST API that you can set up in less than a minute. It's great for prototyping and front-end development.
+
+---
+
+## 🚀 Features
+- RESTful routes (`GET`, `POST`, `PUT`, `DELETE`)
+- Watch for changes in `db.json`
+- Serve your data instantly with zero back-end code
+
+---
+
+## ✅ Prerequisites
+- Node.js **v20 or higher** (recommended)
+- npm (comes with Node.js)
+
+---
+
+## 🔧 Installation
+
+Install `json-server` globally using npm:
+
+```bash
+npm install -g json-server
+
+```
+
+# JSON Server Configuration and `db.json` Documentation
+
+This project uses **JSON Server** as a mock backend to manage student data. The `db.json` file acts as the database for the JSON Server.
+
+---
+
+## File Path
+`/home/manmohan/Documents/Intern/React/student_management/db.json`
+
+---
+
+## Overview
+The `db.json` file contains a collection of student records stored in JSON format. JSON Server uses this file to simulate a RESTful API, allowing the React application to perform CRUD operations (Create, Read, Update, Delete) on the student data.
+
+---
+
+## Sample Data Structure
+The `db.json` file contains a `students` array, where each object represents a student with the following fields:
+
+- **id**: Unique identifier for the student.
+- **firstName**: The first name of the student.
+- **lastName**: The last name of the student.
+- **address**: The address of the student.
+- **phone**: The phone number of the student.
+- **email**: The email address of the student.
+
+### Example:
+```json
+{
+    "students": [
+        {
+            "id": 1,
+            "firstName": "John",
+            "lastName": "Doe",
+            "address": "123 Main St",
+            "phone": "555-555-5555",
+            "email": "man@gmail.com"
+        },
+        {
+            "id": 2,
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "address": "456 Elm St",
+            "phone": "555-555-1234",
+            "email": "jane@gmail.com"
+        }
+    ]
+}
+```
