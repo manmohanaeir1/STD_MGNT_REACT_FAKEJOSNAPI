@@ -139,3 +139,9 @@ In React, **state** refers to data that changes over time and affects what gets 
 
 ```js
 const [stateVariable, setStateVariable] = useState(initialValue);
+
+-state: The current value of the state.
+
+-setState: A function to update the state.
+
+-initialValue: The initial value of the state variable.
