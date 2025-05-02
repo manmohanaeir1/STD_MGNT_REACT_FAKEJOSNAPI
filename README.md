@@ -126,3 +126,16 @@ The `db.json` file contains a `students` array, where each object represents a s
     ]
 }
 ```
+
+# 🧠 React State Management with `useState`
+
+In React, **state** refers to data that changes over time and affects what gets rendered to the UI.
+
+---
+
+## 🔧 What is `useState`?
+
+`useState` is a **Hook** that lets you add React state to function components.
+
+```js
+const [stateVariable, setStateVariable] = useState(initialValue);

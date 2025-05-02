@@ -1,11 +1,26 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function StudentTable() {
+ const [students, setStudents] = useState("");
+
+    useEffect(()=>{
+
+        fetch('http://localhost:3001/students')
+        .then((res) =>res.json()
+        .then((data) => {
+            setStudents(data);
+        })) 
+        .catch((err) => {
+            console.error(err.message);
+        })
+
+    })
     return (
         <div className="container">
             <h2>Students Details</h2>
              <div className="table-contentner">
-                 <Link to ="/student/create"  class="btn btn-add">Add New Srudent</Link>
+                 <Link to ="/student/create"  className="btn btn-add">Add New Srudent</Link>
              </div>
              <table>
     <thead>
@@ -20,19 +35,28 @@ export default function StudentTable() {
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>John</td>
-            <td>Doe</td>
-            <td>123 Main St</td>
-            <td>555-555-5555</td>
-            <td>man@gamil.com</td>
+        {
+            students && students.map((item)=>
+                <tr>
+            <td>{item.id}</td>
+            <td>{item.firstName}</td>
+            <td>{item.lastName}</td>
+            <td>{item.address}</td>
+            <td>{item.phone}</td>
+            <td>{item.email}</td>
             <td>
-                <a href="#" class="btn btn-edit">Edit</a>
-                <a href="#" class="btn btn-delete">Delete</a>
-                <a href="#" class="btn btn-view">View</a>
+                <a href="#" className="btn btn-edit">Edit</a>
+                <a href="#" className="btn btn-delete">Delete</a>
+                <a href="#" className="btn btn-view">View</a>
             </td>
         </tr>
+
+            )
+            
+
+            
+        }
+
     </tbody>
 </table>
              
