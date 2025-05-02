@@ -1,21 +1,23 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 
 export default function StudentTable() {
  const [students, setStudents] = useState("");
+ const  navigate = useNavigate();
+ const DisplayDetails = (id) => {
+     navigate("/student/view/" +id);
+ };
 
-    useEffect(()=>{
-
-        fetch('http://localhost:3001/students')
-        .then((res) =>res.json()
+ useEffect(() => {
+    fetch('http://localhost:3001/students')
+        .then((res) => res.json())
         .then((data) => {
             setStudents(data);
-        })) 
+        })
         .catch((err) => {
             console.error(err.message);
-        })
-
-    })
+        });
+ }, []);
     return (
         <div className="container">
             <h2>Students Details</h2>
@@ -37,7 +39,7 @@ export default function StudentTable() {
     <tbody>
         {
             students && students.map((item)=>
-                <tr>
+                <tr key={item.id}>
             <td>{item.id}</td>
             <td>{item.firstName}</td>
             <td>{item.lastName}</td>
@@ -45,10 +47,12 @@ export default function StudentTable() {
             <td>{item.phone}</td>
             <td>{item.email}</td>
             <td>
+            <button onClick={() => DisplayDetails(item.id)} className="btn btn-view">
+                View
+            </button>
                 <a href="#" className="btn btn-edit">Edit</a>
                 <a href="#" className="btn btn-delete">Delete</a>
-                <a href="#" className="btn btn-view">View</a>
-            </td>
+             </td>
         </tr>
 
             )
