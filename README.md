@@ -166,3 +166,23 @@ The `useParams` hook allows you to extract route parameters from the URL. These 
 ### Syntax:
 ```jsx
 const params = useParams();
+```
+
+## 📸 Screenshot Representation of Index and CRUD Pages
+
+
+- Index Page
+![alt text](image.png)
+
+- Create Page
+![alt text](image-1.png)
+
+- Edit Page 
+![alt text](image-3.png)
+
+- View Page 
+![alt text](image-2.png)
+
+
+
+

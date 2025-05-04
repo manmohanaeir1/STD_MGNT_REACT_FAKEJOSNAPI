@@ -11,6 +11,22 @@ export default function StudentTable() {
  const EditStudent = (id) => {
      navigate("/student/edit/" +id);
  }
+ 
+ const DeleteStudent = (id) => {
+    if (window.confirm("Are you sure you want to delete this student?")) {
+        fetch(`http://localhost:3001/students/${id}`, {
+            method: 'DELETE',
+        })
+            .then(() => {
+                alert("Student deleted successfully");
+                setStudents(students.filter((student) => student.id !== id)); // Update the state
+            })
+            .catch((err) => {
+                console.error(err.message);
+                alert("Error deleting student");
+            });
+    }
+};
 
  useEffect(() => {
     fetch('http://localhost:3001/students')
@@ -57,8 +73,11 @@ export default function StudentTable() {
             <button onClick={() => EditStudent(item.id)} className="btn btn-edit">
                 Edit    
             </button>
+            <button onClick={() => DeleteStudent(item.id)} className="btn btn-delete">
+                                    Delete
+                                </button>
                   
-                <a href="#" className="btn btn-delete">Delete</a>
+                 
              </td>
         </tr>
 

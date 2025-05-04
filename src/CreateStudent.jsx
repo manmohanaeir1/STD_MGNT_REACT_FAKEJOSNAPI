@@ -28,7 +28,7 @@ export default function CreateStudent() {
             },
             body: JSON.stringify(student)
         })
-        .then(() => {
+        .then(() => {   
             alert("Student Added Successfully");
             navigate("/"); // Redirect to home page
         })

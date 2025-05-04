@@ -9,76 +9,12 @@
       "email": "dsda@das.da"
     },
     {
-      "id": " ",
-      "firstName": " ",
-      "lastName": " ",
-      "address": " ",
-      "phone": " ",
-      "email": " "
-    },
-    {
-      "id": " 5",
-      "firstName": "New  ",
-      "lastName": "Entry",
-      "address": "Hello12345",
-      "phone": "7890-",
-      "email": "hello@gmail.com"
-    },
-    {
-      "id": " ",
-      "firstName": " ",
-      "lastName": " ",
-      "address": " ",
-      "phone": " ",
-      "email": " "
-    },
-    {
-      "id": " 8",
-      "firstName": " ram ",
-      "lastName": "hari",
-      "address": "wer",
-      "phone": "567890-",
-      "email": "jnk@gmai.vom"
-    },
-    {
-      "id": "9 ",
-      "firstName": "man",
-      "lastName": "mohan",
-      "address": "wer",
-      "phone": "2345",
-      "email": "dnfksjn@gsd.sf"
-    },
-    {
-      "id": "9 ",
-      "firstName": "man",
-      "lastName": "mohan",
-      "address": "wer",
-      "phone": "2345",
-      "email": "dnfksjn@gsd.sf"
-    },
-    {
-      "id": "10",
-      "firstName": "Manmohan ",
-      "lastName": "Aeeir",
-      "address": "dfghjk",
-      "phone": "456789",
-      "email": "mxnhdbj@fauid.com"
-    },
-    {
-      "id": "",
-      "firstName": "",
-      "lastName": "",
-      "address": "",
-      "phone": "",
-      "email": ""
-    },
-    {
-      "id": "ds",
-      "firstName": "kjn",
-      "lastName": "jkn",
-      "address": "kjn",
-      "phone": "jkn",
-      "email": "kj"
+      "id": "2",
+      "firstName": "Manmohan",
+      "lastName": "Aeir",
+      "address": "1990",
+      "phone": "986591421",
+      "email": "manmohanaeir00112@gmail.com"
     }
   ]
 }
