@@ -147,3 +147,22 @@ const [stateVariable, setStateVariable] = useState(initialValue);
 -initialValue: The initial value of the state variable.
 
 ```
+
+#  What is : `useParams` in React Router
+
+The `useParams` hook is a part of the `react-router-dom` library and is used to access dynamic parameters from the URL in a React application. This documentation explains how `useParams` is utilized in the `ViewStudent` component.
+
+---
+
+## File Path
+` /student_management/src/ViewStudent.jsx`
+
+---
+
+## Overview of `useParams`
+
+The `useParams` hook allows you to extract route parameters from the URL. These parameters are typically defined in the route configuration using a colon (`:`) followed by the parameter name.
+
+### Syntax:
+```jsx
+const params = useParams();
