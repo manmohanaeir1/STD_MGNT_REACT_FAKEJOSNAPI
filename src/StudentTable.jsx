@@ -8,6 +8,10 @@ export default function StudentTable() {
      navigate("/student/view/" +id);
  };
 
+ const EditStudent = (id) => {
+     navigate("/student/edit/" +id);
+ }
+
  useEffect(() => {
     fetch('http://localhost:3001/students')
         .then((res) => res.json())
@@ -50,7 +54,10 @@ export default function StudentTable() {
             <button onClick={() => DisplayDetails(item.id)} className="btn btn-view">
                 View
             </button>
-                <a href="#" className="btn btn-edit">Edit</a>
+            <button onClick={() => EditStudent(item.id)} className="btn btn-edit">
+                Edit    
+            </button>
+                  
                 <a href="#" className="btn btn-delete">Delete</a>
              </td>
         </tr>
